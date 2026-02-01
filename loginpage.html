@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyMusic - Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      font-family: sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #2d3748;
+      border-radius: 10px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    input {
+      background: #4a5568;
+      color: white;
+    }
+    button {
+      background: #63b3ed;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #4299e1;
+    }
+    a {
+      color: #63b3ed;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-3xl font-bold mb-6 text-center">Login to MyMusic</h1>
+    <form action="/LoginValidation" method="POST">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+      <button type="submit">Login</button>
+    </form>
+    <p class="mt-4 text-center">
+      Don't have an account? <a href="signup.html">Sign up here</a>
+    </p>
+  </div>
+</body>
+</html>
